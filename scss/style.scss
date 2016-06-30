@@ -13,10 +13,17 @@ body, html, main {
 }
 
 .cd-header {
+  display: inline-block;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   background: #3e2121;
   z-index: 2;
 }
@@ -27,9 +34,7 @@ body, html, main {
   margin-bottom: 10px;
   padding-right: 20px;
   z-index: 10;
-
   li {
-    display: inline-block;
     font-family: Impact, Charcoal, sans-serif;
     font-weight: bold;
     padding: 14px 25px;
@@ -49,11 +54,6 @@ a {
   &:hover {
     color: #3e2121;
   }
-
-  &:active {
-    color: #000000;
-  }
-
   &:visited {
     color: #7e1717;
   }
@@ -71,29 +71,23 @@ a {
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
       color: black;
       transform: translateX(-50%) translateY(-50%);
-      width: 90%;
       max-width: 1170px;
       text-align: center;
+      opacity: 1;
     }
-
     background-image: url("http://socjolook.pl/wp-content/uploads/2011/11/4.jpg");
   }
-
   &.cd-bg-2 {
     background-image: url("https://d-nm.ppstatic.pl/kadr/k/r/22/8d/4ec51405e2447_o,size,933x0,q,70,h,265bb0.jpg");
-  }
-
-  &.cd-bg-3 {
-    background-image: url("../img/cd-background-3.jpg");
-  }
-
-  &.cd-bg-4 {
-    background-image: url("http://biblioteka.r-sl.pl/pasje/pliki/godula_fermata/galeria/plyta_nagrobna_w_kosciele_w_szombierkach.jpg");
   }
 }
 
 .cd-scrolling-bg {
-  min-height: 100%;
+  margin: 10px;
   border-top-color: #ff0000;
   background-color: white;
+  font-family: Impact, Charcoal, sans-serif;
+  p::first-letter {
+    font-size: 200%;
+  }
 }
